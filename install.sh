@@ -1,4 +1,4 @@
-mkdir old_files
+mkdir oldfiles
 for f in .??*
   do
     [[ "$f" == ".git" ]] && continue
