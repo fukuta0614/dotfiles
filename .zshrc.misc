@@ -7,7 +7,7 @@ tab-color() {
 tab-reset() {
     echo -ne "\033]6;1;bg;*;default\a"
 }
-tab-color 100 100 255
+tab-color 134 200 0
 DISABLE_AUTO_TITLE="true"
 echo -ne "\e]1;$HOST\a"
 
