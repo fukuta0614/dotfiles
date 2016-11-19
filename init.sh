@@ -1,8 +1,10 @@
-list=(".zshrc" ".zshrc.misc" ".zshrc.antigen" ".vimrc" ".tmux.conf")
+list=(".zshrc" ".zshrc.misc" ".zshrc.antigen" ".vimrc" ".tmux.conf" ".gitconfig")
 
 for item in ${list[@]}; do
-    mv ~/$item .
-    ln -s ~/dotfiles/$item ~/$item
+    if [ ! -f $item ]; then
+       mv ~/$item .
+       ln -s ~/dotfiles/$item ~/$item
+    fi
 done
 
 
