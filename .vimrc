@@ -1,3 +1,6 @@
+
+"set number
+
 set paste
 filetype plugin indent on
 
