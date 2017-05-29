@@ -16,7 +16,7 @@ plugins=(git history zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # misc file
-source $HOME/.zshrc.mil
+[[ -e $HOME/.zshrc.mil ]] && source $HOME/.zshrc.mil
 source $HOME/.zshrc.misc
 
 # alias
