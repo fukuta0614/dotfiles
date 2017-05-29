@@ -4,6 +4,9 @@ export LC_ALL='en_US.UTF-8'
 export LANG='en_US.UTF-8'
 
 # oh-my-zsh
+if [ ! -e "$HOME/.oh-my-zsh" ]; then
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+fi 
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 if [ ! -e "${ZSH}/custom/plugins/zsh-syntax-highlighting" ]; then
@@ -20,6 +23,8 @@ source $HOME/.zshrc.misc
 alias history="fc -lt '%F %T' 1"
 alias py='python'
 alias sl='ls'
+alias jp='jupyter notebook'
+alias n='nvidia-smi'
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
