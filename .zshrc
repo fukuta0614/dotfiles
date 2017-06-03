@@ -15,6 +15,9 @@ fi
 plugins=(git history zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
+bindkey "^P" up-line-or-beginning-search
+bindkey "^N" down-line-or-beginning-search
+
 # misc file
 [[ -e $HOME/.zshrc.mil ]] && source $HOME/.zshrc.mil
 source $HOME/.zshrc.misc
