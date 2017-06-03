@@ -23,7 +23,7 @@ source $HOME/.zshrc.misc
 alias history="fc -lt '%F %T' 1"
 alias py='python'
 alias sl='ls'
-alias jp='jupyter notebook'
+alias jp="jupyter notebook --no-browser --ip='*'"
 alias n='nvidia-smi'
 
 # pyenv
