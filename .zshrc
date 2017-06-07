@@ -15,6 +15,9 @@ fi
 plugins=(git history zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
+bindkey "^P" up-line-or-beginning-search
+bindkey "^N" down-line-or-beginning-search
+
 # misc file
 [[ -e $HOME/.zshrc.mil ]] && source $HOME/.zshrc.mil
 source $HOME/.zshrc.misc
@@ -23,7 +26,7 @@ source $HOME/.zshrc.misc
 alias history="fc -lt '%F %T' 1"
 alias py='python'
 alias sl='ls'
-alias jp='jupyter notebook'
+alias jp="jupyter notebook --no-browser --ip='*'"
 alias n='nvidia-smi'
 
 # pyenv
