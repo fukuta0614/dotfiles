@@ -1,0 +1,43 @@
+# PATH
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+export PATH=$HOME/local/bin:$PATH
+export PATH=$HOME/tmp/bftools/:$PATH
+
+export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$HOME/local/lib:$HOME/local/lib/x86_64-linux-gnu/:$LD_LIBRARY_PATH
+export CPATH=$HOME/local/include:$CPATH
+export INCLUDE_DIRS=$HOME/local/include:$INCLUDE_DIRS
+export PKG_CONFIG_PATH=$HOME/local/lib/pkgconfig/
+
+# CUDA
+export CUDA_HOME=/usr/local/cuda-8.0
+export PATH=${CUDA_HOME}/bin:${PATH}
+export CPATH=${CUDA_HOME}/include:$CPATH
+export LIBRARY_PATH=${CUDA_HOME}/lib64:$LIBRARY_PATH
+export LD_LIBRARY_PATH=${CUDA_HOME}/lib64:$LD_LIBRARY_PATH
+
+# CUDNN
+#export CUDNN_HOME=$HOME/local/cudnn/cuda8.0.v5_1
+#export CPATH=${CUDNN_HOME}/include:$CPATH
+#export LIBRARY_PATH=${CUDNN_HOME}/lib64:$LIBRARY_PATH
+#export LD_LIBRARY_PATH=${CUDNN_HOME}/lib64:$LD_LIBRARY_PATH
+
+export CUDNNENV_HOME=$HOME/.cudnn/active/cuda
+export LD_LIBRARY_PATH=$CUDNNENV_HOME/lib64:$LD_LIBRARY_PATH
+export CPATH=$CUDNNENV_HOME/include:$CPATH
+export LIBRARY_PATH=$CUDNNENV_HOME/lib64:$LIBRARY_PATH
+
+
+# GO
+export GOROOT=$HOME/tmp/go
+export GOPATH=$HOME/tmp/go/work
+export PATH=${GOROOT}/bin:${GOPATH}/bin:$PATH
+
+# ANACONDA
+export PYTHONPATH=/home/mil/fukuta/caffe/python:$PYTHONPATH
+#export LD_LIBRARY_PATH=/home/mil/fukuta/work_space/activityNet/flownet-release/build/lib:$LD_LIBRARY_PATH
+#export CPATH=/home/mil/fukuta/.pyenv/versions/anaconda-2.4.0/include:$CPATH
+#export LD_LIBRARY_PATH=/home/mil/fukuta/.pyenv/versions/anaconda3-4.0.0/lib:$LD_LIBRARY_PATH
+
+# TORCH
+# . /home/mil/fukuta/torch/install/bin/torch-activate
