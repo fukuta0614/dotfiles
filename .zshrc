@@ -20,7 +20,7 @@ bindkey "^N" down-line-or-beginning-search
 
 # misc file
 [[ -e $HOME/.zshrc.mil ]] && source $HOME/.zshrc.mil
-source $HOME/.zshrc.misc
+[[ -e $HOME/.zshrc.misc ]] && source $HOME/.zshrc.misc
 
 # alias
 alias history="fc -lt '%F %T' 1"
